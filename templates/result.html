@@ -3,9 +3,11 @@
    <body>
 
 {% for k,v in result.items() %}
+
     {%  if k == 'name' %}
     Hello {{ v }}
     {%  endif %}
+
 {% endfor %}
 {{ result.get(name) }}
 {{ result[result] }}
